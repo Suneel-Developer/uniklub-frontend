@@ -1,6 +1,7 @@
 'use client'
 import { useState, useEffect } from 'react';
 import Image from 'next/image';
+import Link from 'next/link';
 
 const SignInPopup = ({ onClose }) => {
     // Email & Password
@@ -87,8 +88,8 @@ const SignInPopup = ({ onClose }) => {
                             />
                         </div>
                         {/* Continue Button */}
-                        <div className='w-full mx-auto max-w-[389px]'>
-                            <button type="submit" className="mt-[40px] md:mt-[97.6px] mb-[20px] max-w-[389px] mx-auto w-full h-[37.4px] bg-[#0019FD] rounded-[8px] text-[12px] leading-[24px] font-semibold">CONTINUE</button>
+                        <div className='w-full mx-auto max-w-[389px] bg-[#0019FD] mt-[40px] md:mt-[97.6px] h-[37.4px] flex items-center justify-center mb-[20px] text-center rounded-[8px]'>
+                            <Link href='/' type="submit" className="text-[12px] leading-[24px] font-semibold text-center">CONTINUE</Link>
                         </div>
                     </form>
                     <p className="text-[12px] sm:text-[18px] leading-[27px] font-semibold tracking-[0.02em] flex gap-[3px] md:hidden">Don’t have an account?

@@ -10,9 +10,9 @@ const DashboardLayout = ({ children }) => {
         setOpen(!open)
     }
     return (
-        <main className='dashboard-home-bg'>
+        <main className='dashboard-home-bg '>
             <DashboardNavbar toggleSidebar={toggleSidebar} />
-            <div className='flex'>
+            <div className='flex '>
                 {/* <div className='md:block hidden h-full'> */}
                     <DashboardSideBar isOpen={open} />
                 {/* </div> */}
